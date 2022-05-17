@@ -1,0 +1,19 @@
+/* Fonts */
+#fuente-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: yellow;
+  text-decoration: none; }
+
+/* mediaqueries */
+/* body */
+body {
+  background: url("../img/asteroids.jpg") no-repeat center fixed;
+  background-size: cover; }
+  body .sectionTitulo header .titulo a h1 {
+    color: yellow; }
+  body footer form {
+    background-color: rgba(151, 24, 24, 0.767);
+    color: white;
+    margin: 1rem 2rem;
+    padding: 2rem; }
