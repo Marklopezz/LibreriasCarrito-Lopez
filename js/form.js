@@ -1,14 +1,20 @@
 let formulario = document.getElementById('formulario');
 
+function showUsers(nombre, edad, email) {
+    console.log(nombre);
+    console.log(edad);
+    console.log(email);
+}
+
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
 
     let data = new FormData(formulario)
 
-    console.log(data)
-    console.log(data.get('nombre'))
-    console.log(data.get('edad'))
-    console.log(data.get('email'))
+    console.log(data);
+    let nombre = data.get('nombre');
+    let edad = data.get('edad');
+    let email = data.get('email');
 
     if (nombre === '' || edad === '' || email === '') {
         swal({
@@ -19,24 +25,24 @@ formulario.addEventListener('submit', function(e) {
             timer: 1000
         })
     } else {
-        users.showUsers(nombre, edad, email)
+        showUsers(nombre, edad, email)
     }
 
     fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "POST",
             body: JSON.stringify({
                 tittle: "DatosUser",
-                body: data
+                body: new FormData(e.currentTarget)
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         })
         .then((response) => response.json())
-        .then((data) => console.log(json))
+        .then((data) => console.log(data));
 
 
-})
+});
 
 
 
