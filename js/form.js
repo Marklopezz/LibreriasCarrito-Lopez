@@ -1,23 +1,33 @@
-let btnEmpezar = document.getElementById('btnEmpezar');
+let formulario = document.getElementById('formulario');
 
-function verificar(event) {
-    //Previene que se reinicie el sitio al presionar Enviar
-    event.preventDefault();
+formulario.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-    let nombre = document.getElementById('nombre').value;
-    let edad = document.getElementById('edad').value;
-    let email = document.getElementById('email').value;
+    let data = new FormData(formulario)
 
-    //Devuelve error si no se ingresa lo requerido
+    console.log(data)
+    console.log(data.get('nombre'))
+    console.log(data.get('edad'))
+    console.log(data.get('email'))
+
     if (nombre === '' || edad === '' || email === '') {
-        swal.fire({
-            type: 'error',
-            tittle: 'Oops',
+        swal({
+            icon: 'error',
+            tittle: 'Oops...',
             text: 'Ingrese todos los campos requeridos :)',
             showConfirmButton: false,
-            timer: 100
+            timer: 1000
         })
     } else {
         users.showUsers(nombre, edad, email)
     }
-}
+
+    fetch("/jasons/data.jason", {
+            method: "POST",
+            body: new FormData(e.currentTarget)
+        })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+
+
+})
