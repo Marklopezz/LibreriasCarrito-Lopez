@@ -31,8 +31,8 @@ formulario.addEventListener('submit', function(e) {
     fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "POST",
             body: JSON.stringify({
-                tittle: "DatosUser",
-                body: new FormData(e.currentTarget)
+                tittle: "Datos de Formulario",
+                body: `nombre: ${nombre} edad: ${edad} email: ${email}`,
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
@@ -40,7 +40,6 @@ formulario.addEventListener('submit', function(e) {
         })
         .then((response) => response.json())
         .then((data) => console.log(data));
-
 
 });
 
