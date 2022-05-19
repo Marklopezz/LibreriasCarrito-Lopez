@@ -22,12 +22,18 @@ formulario.addEventListener('submit', function(e) {
         users.showUsers(nombre, edad, email)
     }
 
-    fetch("/jasons/data.jason", {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "POST",
-            body: new FormData(e.currentTarget)
+            body: JSON.stringify({
+                tittle: "DatosUser",
+                body: new FormData(e.currentTarget),
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
         })
         .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((data) => console.log(json))
 
 
 })
