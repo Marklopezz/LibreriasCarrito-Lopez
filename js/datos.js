@@ -13,15 +13,9 @@ let baseDeDatos = [{ "id": 1, "nombre": "Gorro Mont Blanc", "precio": 1990, "ima
 ];
 
 //Desestructuración
-let [, a,b,c] = baseDeDatos;
+let [, a, b, c] = baseDeDatos;
 
 
 console.log(a)
 console.log(b)
 console.log(c)
-
-//Spread
-
-let preciosInd = [1990, 5560, 3500, 1000, 5000, 2000, 8800, 6990, 700, 1200, 4000, 5000]
-
-    console.log(Math.max(...preciosInd))
