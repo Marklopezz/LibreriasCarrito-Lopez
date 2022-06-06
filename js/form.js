@@ -11,7 +11,7 @@ formulario.addEventListener('submit', function(e) {
 
     let data = new FormData(formulario)
 
-    console.log(data);
+    //console.log(data);
     let nombre = data.get('nombre');
     let edad = data.get('edad');
     let email = data.get('email');
@@ -19,7 +19,7 @@ formulario.addEventListener('submit', function(e) {
     if (nombre === '' || edad === '' || email === '') {
         Swal.fire({
             icon: 'error',
-            tittle: 'Oops...',
+            title: 'Oops...',
             text: 'Ingrese todos los campos requeridos :)',
             showConfirmButton: false,
             timer: 1000

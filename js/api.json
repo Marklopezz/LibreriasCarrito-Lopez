@@ -1,0 +1,85 @@
+[{
+        "id": 1,
+        "nombre": "Gorro Mont Blanc",
+        "precio": 1990,
+        "imagen": "https://drive.google.com/file/d/1IS5VhzBl7c5tr1jaOogPLKwq9OFowudg/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 2,
+        "nombre": "Hoodie Basic",
+        "precio": 5660,
+        "imagen": "https://drive.google.com/file/d/1JNIQAr_vXhMghyx4Q30unHJim3AFGRoE/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 3,
+        "nombre": "Jogging Reflex Black",
+        "precio": 3500,
+        "imagen": "https://drive.google.com/file/d/1s2akA-AKXeA8zggkTH1EEex4G1kLHheN/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 4,
+        "nombre": "Remera Estampada NASA",
+        "precio": 1000,
+        "imagen": "https://drive.google.com/file/d/17nAaL-qUggED72XrYWoTd9ufCNb5dj7g/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 5,
+        "nombre": "Buzo Thrasher Blanco",
+        "precio": 5000,
+        "imagen": "https://drive.google.com/file/d/1_5X3pJX3nQkjYwyH5pQsIP8_eAdXCqfG/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 6,
+        "nombre": "Camisa Leñador",
+        "precio": 2000,
+        "imagen": "https://drive.google.com/file/d/1pM0aTJJL1hkiSYntJd5wKnSkp-V8TBzD/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 7,
+        "nombre": "Parka Hunter Camel",
+        "precio": 8800,
+        "imagen": "https://drive.google.com/file/d/1137bnGeWWmQegzdBBrziQzYiuGongksw/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 8,
+        "nombre": "Campera American Blue",
+        "precio": 6990,
+        "imagen": "https://drive.google.com/file/d/1Mb6M8Ge8hYO_sjlfK47GBWA-FaaWMylL/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 9,
+        "nombre": "Pulsera Energy",
+        "precio": 700,
+        "imagen": "https://drive.google.com/file/d/1BatR5D-E6Exq5OhDCtWY0w4m8UFg6SLS/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 10,
+        "nombre": "Short Army",
+        "precio": 1200,
+        "imagen": "https://drive.google.com/file/d/19llgETKdI9rIFWWJWSiKCRbhCltRZVJb/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 11,
+        "nombre": "Polera Dexter Marrón",
+        "precio": 4000,
+        "imagen": "https://drive.google.com/file/d/1w6XAyGtU9-tKhsu45lxOf4QmHMeJGi91/view?usp=sharing",
+        "stock": "20"
+    },
+    {
+        "id": 12,
+        "nombre": "Sweater de hilo Gris",
+        "precio": 5000,
+        "imagen": "https://drive.google.com/file/d/1zdpxEhMIMz97f8Vo_aeHA6PosRFsLNHb/view?usp=sharing",
+        "stock": "20"
+    }
+]

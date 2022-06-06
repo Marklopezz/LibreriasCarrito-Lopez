@@ -11,11 +11,3 @@ let baseDeDatos = [{ "id": 1, "nombre": "Gorro Mont Blanc", "precio": 1990, "ima
     { "id": 11, "nombre": "Polera Dexter Marrón", "precio": 4000, "imagen": "img/Polera-Dexter-Marron.jpg" },
     { "id": 12, "nombre": "Sweater de hilo Gris", "precio": 5000, "imagen": "img/Sweater-de-hilo-Gris.jpg" }
 ];
-
-//Desestructuración
-let [, a, b, c] = baseDeDatos;
-
-
-console.log(a)
-console.log(b)
-console.log(c)

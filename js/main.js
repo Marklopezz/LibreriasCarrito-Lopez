@@ -1,4 +1,4 @@
-//Marcos Lopez :)
+//Marcos Lopez
 
 window.onload = function() {
 
@@ -9,7 +9,7 @@ window.onload = function() {
     let $carrito = document.querySelector('#carrito');
     let $total = document.querySelector('#total');
     let $botonVaciar = document.querySelector('#boton-vaciar');
-    let $form = document.querySelector('#form')
+    let $botonComprar = document.querySelector('#boton-comprar');
 
     // Funciones
     function renderItems() {
@@ -63,7 +63,7 @@ window.onload = function() {
             position: "right",
             stopOnFocus: false,
             style: {
-                background: "linear-gradient(to right, #dab74c , #990000)",
+                background: "linear-gradient(to right, #5A78A0 , #E0828C)",
             },
             onClick: function() {}
         }).showToast();
@@ -104,8 +104,8 @@ window.onload = function() {
     }
 
     function borrarItemCarrito() {
-        console.log()
-            // Obtenemos el producto ID que hay en el boton pulsado
+        //console.log()
+        // Obtenemos el producto ID que hay en el boton pulsado
         let id = this.getAttribute('item');
         // Borramos todos los productos
         carrito = carrito.filter(function(carritoId) {
@@ -123,7 +123,7 @@ window.onload = function() {
             position: "right",
             stopOnFocus: false,
             style: {
-                background: "linear-gradient(to right, #dab74c , #990000 )",
+                background: "linear-gradient(to right, #5A78A0 , #E0828C )",
             },
             onClick: function() {}
         }).showToast();
@@ -136,7 +136,7 @@ window.onload = function() {
         for (let item of carrito) {
             // De cada elemento obtenemos su precio?
             let miItem = baseDeDatos.filter(function(itemBaseDatos) {
-                return itemBaseDatos['id'] == item;
+                return itemBaseDatos['id'] !== item;
             });
             total = total + miItem[0]['precio'];
         }
@@ -154,10 +154,19 @@ window.onload = function() {
         calcularTotal();
     }
 
+
+
+
+    function comprarCarrito() {
+        vaciarCarrito();
+        swal.fire("Gracias por su compra!", "En un plazo de 48 horas recibirá su pedido :)", "success");
+    }
+
     // Botón Vaciar Carrito
     $botonVaciar.addEventListener('click', vaciarCarrito);
-
-    // Inicio
+    // Botón Comprar items carrito
+    $botonComprar.addEventListener('click', comprarCarrito)
+        // Inicio
     renderItems();
 
 
