@@ -75,6 +75,9 @@ function anyadirCarrito(baseDeDatos, miNodoBoton) {
         onClick: function() {}
     }).showToast();
 
+    //LocalStorage
+    localStorage.setItem("Productos del Carrito", JSON.stringify(item))
+
 }
 
 
@@ -84,7 +87,7 @@ function renderizarCarrito(baseDeDatos) {
     // Quitamos los duplicados
     let carritoSinDuplicados = [...new Set(carrito)];
     // Generamos los Nodos a partir de carrito
-    carritoSinDuplicados.forEach(function(item, indice) {
+    carritoSinDuplicados.forEach(function(item) {
         // Obtenemos el item que necesitamos de la variable base de datos
         let miItem = baseDeDatos.filter(function(itemBaseDatos) {
             return itemBaseDatos['id'] == item;
@@ -111,8 +114,8 @@ function renderizarCarrito(baseDeDatos) {
 }
 
 function borrarItemCarrito(baseDeDatos) {
-    //console.log()
-    // Obtenemos el producto ID que hay en el boton pulsado
+    console.log(carrito)
+        // Obtenemos el producto ID que hay en el boton pulsado
     let id = this.getAttribute('item');
     // Borramos todos los productos
     carrito = carrito.filter(function(carritoId) {
