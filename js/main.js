@@ -76,7 +76,7 @@ function anyadirCarrito(baseDeDatos, miNodoBoton) {
     }).showToast();
 
     //LocalStorage
-    localStorage.setItem("Productos del Carrito", JSON.stringify(item))
+    localStorage.getItem("Productos del Carrito", JSON.stringify(carrito))
 
 }
 
@@ -114,8 +114,8 @@ function renderizarCarrito(baseDeDatos) {
 }
 
 function borrarItemCarrito(baseDeDatos) {
-    console.log(carrito)
-        // Obtenemos el producto ID que hay en el boton pulsado
+    //console.log(carrito)
+    // Obtenemos el producto ID que hay en el boton pulsado
     let id = this.getAttribute('item');
     // Borramos todos los productos
     carrito = carrito.filter(function(carritoId) {

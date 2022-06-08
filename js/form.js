@@ -1,10 +1,6 @@
 let formulario = document.getElementById('formulario');
 
-function showUsers(nombre, edad, email) {
-    console.log(nombre);
-    console.log(edad);
-    console.log(email);
-}
+function showUsers(nombre, edad, email) {}
 
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -27,18 +23,4 @@ formulario.addEventListener('submit', function(e) {
     } else {
         showUsers(nombre, edad, email)
     }
-
-    fetch("https://mockend.com/org/repo/users", {
-            method: "POST",
-            body: JSON.stringify({
-                tittle: "Datos de Formulario",
-                body: `nombre: ${nombre} edad: ${edad} email: ${email}`,
-            }),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        })
-        .then((response) => response.json())
-        .then((data) => console.log(data));
-
 });

@@ -1,85 +1,73 @@
 [{
         "id": 1,
-        "nombre": "Gorro Mont Blanc",
+        "nombre": "1-Gorro Mont Blanc",
         "precio": 1990,
-        "imagen": "../img/Gorro-Mont-Blanc.jpeg",
-        "stock": "20"
+        "imagen": "../img/Gorro-Mont-Blanc.jpeg"
     },
     {
         "id": 2,
-        "nombre": "Hoodie Basic",
+        "nombre": "2-Hoodie Basic",
         "precio": 5660,
-        "imagen": "../img/Hoodie-Basic.jpg",
-        "stock": "20"
+        "imagen": "../img/Hoodie-Basic.jpg"
     },
     {
         "id": 3,
-        "nombre": "Jogging Reflex Black",
+        "nombre": "3-Jogging Reflex Black",
         "precio": 3500,
-        "imagen": "../img/Jogging-Reflex-Black.jpg",
-        "stock": "20"
+        "imagen": "../img/Jogging-Reflex-Black.jpg"
     },
     {
         "id": 4,
-        "nombre": "Remera Estampada NASA",
+        "nombre": "4-Remera Estampada NASA",
         "precio": 1000,
-        "imagen": "../img/remera-estampada-NASA.jpg",
-        "stock": "20"
+        "imagen": "../img/remera-estampada-NASA.jpg"
     },
     {
         "id": 5,
-        "nombre": "Buzo Thrasher Blanco",
+        "nombre": "5-Buzo Thrasher Blanco",
         "precio": 5000,
-        "imagen": "../img/buzo-blanco-thrasher.jpg",
-        "stock": "20"
+        "imagen": "../img/buzo-blanco-thrasher.jpg"
     },
     {
         "id": 6,
-        "nombre": "Camisa Leñador",
+        "nombre": "6-Camisa Leñador",
         "precio": 2000,
-        "imagen": "../img/camisa-leñador-roja.jpg",
-        "stock": "20"
+        "imagen": "../img/camisa-leñador-roja.jpg"
     },
     {
         "id": 7,
-        "nombre": "Parka Hunter Camel",
+        "nombre": "7-Parka Hunter Camel",
         "precio": 8800,
-        "imagen": "../img/Parka-Hunter-Camel.jpg",
-        "stock": "20"
+        "imagen": "../img/Parka-Hunter-Camel.jpg"
     },
     {
         "id": 8,
-        "nombre": "Campera American Blue",
+        "nombre": "8-Campera American Blue",
         "precio": 6990,
-        "imagen": "../img/Campera-American-Blue.jpg",
-        "stock": "20"
+        "imagen": "../img/Campera-American-Blue.jpg"
     },
     {
         "id": 9,
-        "nombre": "Pulsera Energy",
+        "nombre": "9-Pulsera Energy",
         "precio": 700,
-        "imagen": "../img/Pulsera-Energy.jpg",
-        "stock": "20"
+        "imagen": "../img/Pulsera-Energy.jpg"
     },
     {
         "id": 10,
-        "nombre": "Short Army",
+        "nombre": "10-Short Army",
         "precio": 1200,
-        "imagen": "../img/Short-Army.jpg",
-        "stock": "20"
+        "imagen": "../img/Short-Army.jpg"
     },
     {
         "id": 11,
-        "nombre": "Polera Dexter Marrón",
+        "nombre": "11-Polera Dexter Marrón",
         "precio": 4000,
-        "imagen": "../img/Polera-Dexter-Marron.jpg",
-        "stock": "20"
+        "imagen": "../img/Polera-Dexter-Marron.jpg"
     },
     {
         "id": 12,
-        "nombre": "Sweater de hilo Gris",
+        "nombre": "12-Sweater de hilo Gris",
         "precio": 5000,
-        "imagen": "../img/Sweater-de-hilo-Gris.jpg",
-        "stock": "20"
+        "imagen": "../img/Sweater-de-hilo-Gris.jpg"
     }
 ]
