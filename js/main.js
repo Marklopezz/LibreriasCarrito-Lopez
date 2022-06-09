@@ -150,10 +150,8 @@ function calcularTotal(baseDeDatos) {
         });
         total = total + miItem[0]['precio'];
     }
-    // Formateamos el total para que solo tenga dos decimales
-    let totalDosDecimales = total.toFixed(2);
     // Renderizamos el precio en el HTML
-    $total.textContent = totalDosDecimales;
+    $total.textContent = total.toFixed(2);
 }
 
 function vaciarCarrito(baseDeDatos) {
